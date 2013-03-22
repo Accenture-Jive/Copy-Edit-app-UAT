@@ -899,6 +899,49 @@ window.location = htmlRef+'/upload';
 {
 isChecked= cb.checked;
 }*/
+
+$(document).ready(function() {
+
+$("#hint").hide();
+var tooltipValue = '';
+var id='';
+
+$("label").mouseenter(function(e){
+
+id = this.id;
+tooltipValue=document.getElementById(id).innerHTML;
+
+$('div.tooltip').remove();
+
+var compare='</span>';
+var pos=tooltipValue.indexOf(compare);
+if (pos!=-1)
+{
+$('<div class="tooltip">'+tooltipValue+'</div>').appendTo('body');
+$('span#hint,label#'+id).bind({
+mousemove : changeTooltipPosition,
+mouseenter : showTooltip,
+mouseleave: hideTooltip
+});
+}
+
+});
+
+var changeTooltipPosition = function(event) {
+var tooltipX = event.pageX;
+var tooltipY = event.pageY;
+$('div.tooltip').css({top: tooltipY, left: tooltipX});
+};
+
+var showTooltip = function(event) {
+changeTooltipPosition(event);
+};
+
+var hideTooltip = function() {
+$('div.tooltip').remove();
+};
+});
+
 </script>
 </head>
 
@@ -914,9 +957,9 @@ Copy To:
 </tr>
 <tr>
 <td>
-<label id="to_space" style="margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Space</label>
-<label id="to_group" style="margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Group</label>
-<label id="to_project" style="margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Project</label>
+<label id="to_space" class="xlabel" style="width:250px;height:33px;margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Space</label>
+<label id="to_group" class="xlabel" style="width:250px;height:33px;margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Group</label>
+<label id="to_project" class="xlabel" style="width:250px;height:33px;margin-left:50px;font-weight:normal;display:none;text-align:left;padding-top:10px;">Copy To Project</label>
 </td>
 </tr>
 
@@ -958,5 +1001,30 @@ Copying the selected content type is not yet available.!
 </div>
 
 <div id="footer" style="font-family:Tahoma">&copy; Accenture 2012-13</div>
+
+<style> 
+
+#hint
+{
+cursor:pointer;
+}
+
+.tooltip
+{
+margin:8px;
+padding:8px;
+border:1px solid #3778C7;
+font-weight:bold;
+background-color:#C1D5F8;
+position: absolute;
+z-index: 2;
+}
+
+.xlabel
+{
+overflow: hidden;
+text-overflow: ellipsis
+}
+</style>
 </body>
 </html>
