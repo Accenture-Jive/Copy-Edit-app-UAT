@@ -33,7 +33,7 @@
 			      <![CDATA[
                   <action id="jiveapps.jw12apps101.content"
                   path="jive/actions/content/*"
-                  label="Copy &amp; Edit UAT"
+                  label="Copy Edit UAT"
                   view="embedded"
                   icon="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/copy_edit_icon.png?login=Bernd-Appelhans&token=edf6ef5ef1584772500657322dadca5f;" />  ]]>
       </Param>  
