@@ -33,7 +33,7 @@
 			      <![CDATA[
                   <action id="jiveapps.jw12apps101.content"
                   path="jive/actions/content/*"
-                  label="Copy Edit UAT"
+                  label="Copy &amp; Edit UAT"
                   view="embedded"
                   icon="copy_edit_icon.png" />  ]]>
       </Param>  
