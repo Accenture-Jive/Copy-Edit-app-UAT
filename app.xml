@@ -35,12 +35,12 @@
                   path="jive/actions/content/*"
                   label="Copy &amp; Edit UAT"
                   view="embedded"
-                  icon="/copy_edit_icon.png?login=Bernd-Appelhans&amp;amp;token=502026dafffb420e9652b9325c3d7f9e" />  ]]>
+                  icon="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/copy_edit_icon.png?login=Bernd-Appelhans&amp;amp;&token=edf6ef5ef1584772500657322dadca5f" />  ]]>
       </Param>  
     </Require>  
 		<Link rel="event.addapp" href="http://ec2-54-246-36-246.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/installed" method="GET"/>
 		<Link rel="event.removeapp" href="http://ec2-54-246-36-246.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/uninstalled" method="GET"/>
 		
     </ModulePrefs>
-    <Content view="embedded" type="html" href="/dealroom.html?login=Bernd-Appelhans&amp;amp;token=502026dafffb420e9652b9325c3d7f9e" preferred_height="250" preferred_width="450"/>
+    <Content view="embedded" type="html" href="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/dealroom.html?login=Bernd-Appelhans&amp;amp;token=502026dafffb420e9652b9325c3d7f9e" preferred_height="250" preferred_width="450"/>
 </Module>
