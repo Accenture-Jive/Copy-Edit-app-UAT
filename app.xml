@@ -42,5 +42,5 @@
 		<Link rel="event.removeapp" href="http://ec2-54-246-36-246.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/uninstalled" method="GET"/>
 		
     </ModulePrefs>
-    <Content view="embedded" type="html" href="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/dealroom.html?login=Bernd-Appelhans&amp;amp;token=502026dafffb420e9652b9325c3d7f9e" preferred_height="250" preferred_width="450"/>
+    <Content view="embedded" type="html" href="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/test.html?login=Bernd-Appelhans&token=d974e303243961425cb0cdedacaf677d" preferred_height="250" preferred_width="450"/>
 </Module>
