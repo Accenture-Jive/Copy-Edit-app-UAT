@@ -35,7 +35,7 @@
                   path="jive/actions/content/*"
                   label="Copy &amp; Edit UAT"
                   view="embedded"
-                  icon="http://cpansearch.perl.org/src/PLAVEN/Padre-0.90/share/icons/gnome218/16x16/actions/edit-copy.png" />  ]]>
+                  icon="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/copy_edit_icon.png?login=Bernd-Appelhans&token=edf6ef5ef1584772500657322dadca5f" />  ]]>
       </Param>  
     </Require>  
 		<Link rel="event.addapp" href="http://ec2-54-246-36-246.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/installed" method="GET"/>
