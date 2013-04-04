@@ -35,7 +35,7 @@
                   path="jive/actions/content/*"
                   label="Copy &amp; Edit UAT"
                   view="embedded"
-                  icon="https://raw.github.com/Accenture-Jive/Copy-Edit-app-UAT/master/copy_edit_icon.png?login=Bernd-Appelhans&token=edf6ef5ef1584772500657322dadca5f" />  ]]>
+                  icon="http://bit.ly/Xg0O3r" />  ]]>
       </Param>  
     </Require>  
 		<Link rel="event.addapp" href="http://ec2-54-246-36-246.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/installed" method="GET"/>
