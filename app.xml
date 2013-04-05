@@ -38,8 +38,8 @@
                   icon="http://bit.ly/Xg0O3r" />  ]]>
       </Param>  
     </Require>  
-		<Link rel="event.addapp" href="http://ec2-54-228-171-115.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/installed" method="GET"/>
-		<Link rel="event.removeapp" href="http://ec2-54-228-171-115.eu-west-1.compute.amazonaws.com:8080/AIDealRoom-Staging/AIServlet/uninstalled" method="GET"/>
+		<Link rel="event.addapp" href="http://ec2-54-228-171-115.eu-west-1.compute.amazonaws.com:8081/UAT/AIServlet/installed" method="GET"/>
+		<Link rel="event.removeapp" href="http://ec2-54-228-171-115.eu-west-1.compute.amazonaws.com:8081/UAT/AIServlet/uninstalled" method="GET"/>
     </ModulePrefs>
     <Content view="embedded" type="html" href="http://bit.ly/YyqWY5" preferred_height="250" preferred_width="250"/>
 </Module>
