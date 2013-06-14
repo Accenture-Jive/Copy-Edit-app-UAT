@@ -227,8 +227,10 @@ if(response.list[0].resources.hasOwnProperty('comments'))
 }
 else
 {
+//hidding comments checkbox for files start
 $("#inc_comments").hide();
 $("#incComments").hide();
+//hidding comments checkbox for files end
 docUrl=response.list[0].resources.self.ref;
 docContent=response.list[0].content;
 docSubject=response.list[0].subject;
