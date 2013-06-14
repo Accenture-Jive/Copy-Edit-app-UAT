@@ -227,6 +227,7 @@ if(response.list[0].resources.hasOwnProperty('comments'))
 }
 else
 {
+$("#inc_comments").hide();
 docUrl=response.list[0].resources.self.ref;
 docContent=response.list[0].content;
 docSubject=response.list[0].subject;
@@ -699,8 +700,7 @@ var	postJson = {
 	osapi.jive.corev3.documents.create(postJson).execute(onContentCreated);
 	}
 	else
-	{
-    $(".inc_comments").hide();
+	{    
 	var iframe = '<iframe id="frame1" src = "" style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
     document.getElementById("selected_items").innerHTML=iframe;  
 	
