@@ -326,7 +326,7 @@ document.getElementById("start_copying_button").style.visibility="hidden";
 $("#change_selection_div").hide();
 //document.getElementById("copyTo").style.visibility="hidden";
 }
-else if(to_sel_place=="this_to"){
+else if(to_sel_placeto_sel_place=="this_to"){
 if(parentUrl!='')
 {
 document.getElementById("start_copying_button").style.visibility="visible";
@@ -839,15 +839,15 @@ function onContentCreated (response) {
     response.createReply(message).execute(); 
     }*/
 	}
-	//var redirectTo=response.resources.html.ref;
-	//var startIndex=redirectTo.indexOf('thread');
-   // var docID= redirectTo.substring(startIndex+7,redirectTo.length);
-//var request = osapi.jive.core.discussions.get({id: docID});
-//request.execute(function(response) {
-//var htmlRef=response.data.messages.root.resources.html.ref;
-//htmlRef= htmlRef.substring(0,htmlRef.indexOf('#'));
-//window.location = htmlRef+'/edit'; 	
-//});
+	var redirectTo=response.resources.html.ref;
+	var startIndex=redirectTo.indexOf('thread');
+   var docID= redirectTo.substring(startIndex+7,redirectTo.length);
+var request = osapi.jive.core.discussions.get({id: docID});
+request.execute(function(response) {
+var htmlRef=response.data.messages.root.resources.html.ref;
+htmlRef= htmlRef.substring(0,htmlRef.indexOf('#'));
+window.location = htmlRef+'/edit'; 	
+});
 }
 else if(pollIndex!=-1)
 	{
