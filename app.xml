@@ -33,9 +33,9 @@
 			      <![CDATA[
                   <action id="jiveapps.jw12apps101.content"
                   path="jive/actions/content/*"
-                  label="Copy &amp; Edit"
+                  label="Copy &amp; Edit UAT"
                   view="embedded"
-                  icon="images/copy_edit_icon.png" />  ]]>
+                  icon="http://bit.ly/16fNZIw" />  ]]>
       </Param>  
     </Require>  
 		<Link rel="event.addapp" href="http://54.247.84.129:8081/UAT/AIServlet/installed" method="GET"/>
