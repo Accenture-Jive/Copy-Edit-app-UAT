@@ -15,10 +15,10 @@
    - limitations under the License.
   -->
 <Module>
-    <ModulePrefs title="Copy Edit App UAT"
+    <ModulePrefs title="Copy Edit App"
                 author="Accenture"
-           description="Copy Edit App UAT">
-        <Link rel="Icon" href="group-icon.png"/>
+           description="Copy Edit App">
+        <Link rel="Icon" href="images/group-icon.png"/>
         <Require feature="dynamic-height"/>
         <Require feature="jive-core-v3"/>
         <Require feature="jquery-1.4.2"/>
@@ -33,13 +33,14 @@
 			      <![CDATA[
                   <action id="jiveapps.jw12apps101.content"
                   path="jive/actions/content/*"
-                  label="Copy &amp; Edit UAT"
+                  label="Copy &amp; Edit"
                   view="embedded"
-                  icon="http://bit.ly/Xg0O3r" />  ]]>
+                  icon="images/copy_edit_icon.png" />  ]]>
       </Param>  
     </Require>  
 		<Link rel="event.addapp" href="http://54.247.84.129:8081/UAT/AIServlet/installed" method="GET"/>
 		<Link rel="event.removeapp" href="http://54.247.84.129:8081/UAT/AIServlet/uninstalled" method="GET"/>
+		
     </ModulePrefs>
-    <Content view="embedded" type="html" href="http://bit.ly/YyqWY5" preferred_height="250" preferred_width="250"/>
+    <Content view="embedded" type="html" href="http://bit.ly/18ZeXt4" preferred_height="250" preferred_width="350"/>
 </Module>
