@@ -28,6 +28,10 @@
 		<Require feature="jive-connects-v1"/>
 		<Require feature="opensocial-1.0"/>
 		<Require feature="jive-core-v2"/>
+<!--
+ -Adding Copy & Edit as an App actions
+ -->	
+
 		<Require feature="actions">  
       <Param name="action-contributions">  
 			      <![CDATA[
@@ -42,6 +46,13 @@
 		<Link rel="event.removeapp" href="http://54.247.84.129:8081/UAT/AIServlet/uninstalled" method="GET"/>
 		
     </ModulePrefs>
+<!--
+ -Display canvas view as a default message
+ -->	
+
 	 <Content view="canvas" type="html" href="http://bit.ly/18fXifQ" preferred_height="400" preferred_width="500"/>
+<!--
+ -Actual UI will show an embedded action to the content page
+ -->		 
     <Content view="embedded" type="html" href="http://bit.ly/1bUz73w" preferred_height="250" preferred_width="350"/>
 </Module>

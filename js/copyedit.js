@@ -1,4 +1,7 @@
-
+/*
+isChecked is using wheter user is checked for 
+comments to copy while copying content from one place to another
+*/
 var isChecked=new Boolean();
 	var sourceCommentSelfURL = '';
 	var targetCommentSelfURL = '';
@@ -13,13 +16,19 @@ var isChecked=new Boolean();
 	var redirectHrefLocation;
 	
 var to_sel_place='';
+//commentData will have comments data of particular content except discussion
 var commentData='';
+//messageData will have comments data of a discussion
 var messageData='';
 var parentUrl='';
 var docIndex='';
 var disIndex='';
 var pollIndex='';
 var blogIndex='';
+/*
+hasAttachment will whether the document has any attachments,
+if it has it will be file otherwise it is a plain document
+*/
 var hasAttachment=false;
 var docID='';
 var pollOptions='';
